@@ -9,3 +9,8 @@ let fizzbuzzSequence x y =
     [x..y] |> Seq.map fizzbuzz
 
 fizzbuzzSequence 1 100 |> Seq.iter (printfn "%s")
+
+// Alternative version without intermediate collection
+[1..100]
+    |> Seq.map fizzbuzz
+    |> Seq.iter (printfn "%s")
