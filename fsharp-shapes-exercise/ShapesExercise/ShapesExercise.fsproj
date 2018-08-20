@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Geometry\GeometryPrimitives.fs" />
+    <Compile Include="Geometry\GeometryFormulas.fs" />
+    <Compile Include="Geometry\GeometryOperations.fs" />
+    <Compile Include="Geometry\GeometryExampleShapes.fs" />
+    <Compile Include="Arguments.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser.FSharp" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>
