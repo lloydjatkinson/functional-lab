@@ -1,0 +1,22 @@
+{
+  "name": "javascript-dom-construct",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bili --format cjs,es,umd,umd-min"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "bili": "^3.4.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
+}
